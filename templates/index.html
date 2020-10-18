@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiff Dictionary</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <!-- <link rel="stylesheet" href="../static/css/main.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spiff Dictionary App</h1>
+      
+      <form id="getResult">
+        <input type="text" placeholder="Enter Word..." id="word" />
+        <button type="submit">Search</button>
+      </form>
+      
+      <div id="results">
+        <h3 id="title"></h3>
+        <ul id="def"></ul>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    <!-- <script src="../static/js/main.js"></script> -->
+  </body>
+</html>
